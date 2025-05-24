@@ -1,0 +1,31 @@
+import LeftSidebar from "@/components/organisms/LeftSideBar"
+import MainContent from "@/components/organisms/MainContent"
+import RightSidebar from "@/components/organisms/RightSideBar"
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <div className="flex max-w-7xl mx-auto">
+        {/* Left Sidebar */}
+        <div className="hidden lg:block w-80 sticky top-0 h-screen">
+          <LeftSidebar />
+        </div>
+
+        {/* Main Content */}
+        <div className="flex-1 min-h-screen">
+          <MainContent />
+        </div>
+
+        {/* Right Sidebar */}
+        <div className="hidden xl:block w-2 sticky top-0 h-screen">
+          <RightSidebar />
+        </div>
+      </div>
+
+      {/* Mobile Right Sidebar */}
+      <div className="xl:hidden fixed bottom-6 right-6 z-50">
+        <RightSidebar />
+      </div>
+    </div>
+  )
+}
