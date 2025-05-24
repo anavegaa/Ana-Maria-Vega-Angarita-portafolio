@@ -10,17 +10,16 @@ const Index = () => {
   ];
 
   const programmingLanguages = [
-    { name: "JavaScript", percentage: 90 },
-    { name: "TypeScript", percentage: 85 },
+    { name: "JavaScript", percentage: 80 },
+    { name: "TypeScript", percentage: 70 },
     { name: "Python", percentage: 80 },
-    { name: "React", percentage: 95 },
-    { name: "Next.js", percentage: 90 },
+    { name: "React", percentage: 75 },
+    { name: "Next.js", percentage: 75 },
   ];
 
   const technicalSkills = [
     { name: "Git/GitHub", percentage: 90 },
-    { name: "Docker", percentage: 75 },
-    { name: "AWS", percentage: 70 },
+    { name: "Docker", percentage: 65 },
     { name: "MongoDB", percentage: 80 },
     { name: "PostgreSQL", percentage: 85 },
   ];
