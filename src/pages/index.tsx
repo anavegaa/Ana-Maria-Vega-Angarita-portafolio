@@ -7,7 +7,7 @@ export default function Home() {
     <div className="bg-gray-50 min-h-screen">
       <div className="flex max-w-7xl mx-auto">
         {/* Left Sidebar */}
-        <div className="hidden lg:block w-80 sticky top-0 self-start">
+        <div className="block lg:block w-80 sticky top-0 self-start">
           <LeftSidebar />
         </div>
 
@@ -29,3 +29,4 @@ export default function Home() {
     </div>
   )
 }
+
