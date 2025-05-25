@@ -138,18 +138,29 @@ const Index = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto px-6 py-8">
-        {/* Profile Section */}
-        <section className="mb-12">
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Perfil</h2>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Estudiante de ingeniería de Sistemas en la Universidad de Antioquia, apasionada por escribir código limpio, implementar mejores prácticas y crear experiencias de usuario excepcionales.
-            </p>
-            <Button onClick={() => setIsProfileModalOpen(true)} variant="outline">
-              Ver Información Completa
-            </Button>
-          </div>
-        </section>
+{/* Profile Section */}
+<section className="mb-12">
+  <div className="bg-white rounded-lg shadow-md p-8 flex items-center justify-between flex-wrap gap-6">
+    {/* Texto del perfil */}
+    <div className="flex-1 min-w-[250px]">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Perfil</h2>
+      <p className="text-gray-600 mb-6 leading-relaxed">
+        Estudiante de ingeniería de Sistemas en la Universidad de Antioquia, apasionada por escribir código limpio, implementar mejores prácticas y crear experiencias de usuario excepcionales.
+      </p>
+      <Button onClick={() => setIsProfileModalOpen(true)} variant="outline">
+        Ver Información Completa
+      </Button>
+    </div>
+
+    {/* Imagen de perfil */}
+    <img
+      src="/FotoPerfil.jpg"
+      alt="Profile"
+      className="w-48 h-48 rounded-full object-cover shadow-lg"
+    />
+  </div>
+</section>
+
 
         {/* Skills Section */}
         <section className="mb-12">
