@@ -25,7 +25,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="bg-white h-full shadow-lg overflow-y-auto">
+    <div className="bg-white shadow-lg ">
       <div className="p-6">
         {/* Profile Section */}
         <div className="text-center mb-8">
