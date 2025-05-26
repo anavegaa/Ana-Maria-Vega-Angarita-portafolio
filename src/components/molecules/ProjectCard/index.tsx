@@ -52,7 +52,7 @@ const ProjectCard = ({ title, description, image, technologies, onViewDetails }:
           ))}
         </div>
         <Button onClick={onViewDetails} size="sm">
-          Ver Detalles
+          Saber más
         </Button>
       </div>
     </div>

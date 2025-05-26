@@ -143,16 +143,16 @@ const Index = () => {
   <div className="bg-white rounded-lg shadow-md p-8 flex items-center justify-between flex-wrap gap-6">
     {/* Texto del perfil */}
     <div className="flex-1 min-w-[250px]">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">Perfil</h2>
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">Ana María Vega Angarita</h2>
       <p className="text-gray-600 mb-6 leading-relaxed">
         Estudiante de ingeniería de Sistemas en la Universidad de Antioquia, apasionada por escribir código limpio, implementar mejores prácticas y crear experiencias de usuario excepcionales.
       </p>
       <Button onClick={() => setIsProfileModalOpen(true)} variant="outline">
-        Ver Información Completa
+        Conoce más sobre mí
       </Button>
     </div>
 
-    {/* Imagen de perfil */}
+    {/* Profile picture */}
     <img
       src="/FotoPerfil.jpg"
       alt="Profile"
@@ -164,7 +164,9 @@ const Index = () => {
 
         {/* Skills Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-800 mb-8">Conocimientos</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">Conocimientos</h2>
+          <h3 className="text-center mb-6 text-sm">En esta sección encontrarás las tecnologías y herramientas que domino, 
+            las cuales he utilizado en diversos proyectos académicos y personales para desarrollar soluciones eficientes y funcionales.</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skill, index) => (
               <SkillCard key={index} {...skill} />
@@ -174,8 +176,11 @@ const Index = () => {
 
         {/* Education Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-800 mb-8">Educación</h2>
-          <div className="space-y-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">Educación</h2>
+          <h3 className="text-center mb-6 text-sm">En esta sección podrás explorar información detallada sobre los estudios que he
+             realizado, incluyendo formaciones académicas, cursos, certificaciones y otras experiencias educativas que han contribuido 
+             a mi desarrollo profesional.</h3>
+          <div className="space-y-1">
             {education.map((edu, index) => (
               <EducationCard key={index} {...edu} />
             ))}
@@ -184,7 +189,10 @@ const Index = () => {
 
         {/* Portfolio Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-800 mb-8">Portafolio</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">Portafolio</h2>
+          <h3 className="text-center mb-6 text-sm">En esta sección encontrarás información detallada sobre los proyectos en los que
+             he trabajado, abarcando tanto iniciativas académicas como personales, donde he aplicado distintas tecnologías para 
+             resolver problemas reales y adquirir experiencia práctica.</h3>
           <div className="overflow-x-auto pb-4">
             <div className="flex space-x-6">
               {projects.map((project) => (

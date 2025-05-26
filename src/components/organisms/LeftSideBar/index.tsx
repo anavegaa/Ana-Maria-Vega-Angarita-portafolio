@@ -17,11 +17,18 @@ const Index = () => {
     { name: "Next.js", percentage: 75 },
   ];
 
-  const technicalSkills = [
+    const technicalSkills = [
     { name: "Git/GitHub", percentage: 90 },
     { name: "Docker", percentage: 65 },
     { name: "MongoDB", percentage: 80 },
     { name: "PostgreSQL", percentage: 85 },
+  ];
+
+    const softSkills = [
+    { name: "Comunicación", percentage: 90 },
+    { name: "Trabajo en equipo", percentage: 85 },
+    { name: "Adaptabilidad", percentage: 90 },
+    { name: "Gestión del tiempo y organización", percentage: 90 },
   ];
 
   return (
@@ -87,6 +94,20 @@ const Index = () => {
               label={skill.name}
               percentage={skill.percentage}
               color="bg-purple-600"
+            />
+          ))}
+        </div>
+        {/* Soft Skills */}
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold text-gray-800 mb-4">
+            Habilidades blandas
+          </h3>
+          {softSkills.map((skill, index) => (
+            <ProgressBar
+              key={index}
+              label={skill.name}
+              percentage={skill.percentage}
+              color="bg-pink-600"
             />
           ))}
         </div>
