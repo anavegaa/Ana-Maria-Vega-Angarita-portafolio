@@ -25,7 +25,7 @@ const Index = () => {
   ];
 
     const softSkills = [
-    { name: "Comunicación", percentage: 90 },
+    { name: "Comunicación", percentage: 95 },
     { name: "Trabajo en equipo", percentage: 85 },
     { name: "Adaptabilidad", percentage: 90 },
     { name: "Gestión del tiempo y organización", percentage: 90 },
@@ -50,7 +50,7 @@ const Index = () => {
         <div className="mb-8">
           <ContactInfo
             phone="(+57) 3014567888"
-            email="anamvegaan@email.com"
+            email="anamvegaan@gmail.com"
             location="Medellín, Colombia"
           />
         </div>
