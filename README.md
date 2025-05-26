@@ -6,10 +6,10 @@ Este proyecto es una hoja de vida personal desarrollada con Next.js y desplegada
 https://ana-maria-vega-angarita.vercel.app/
 
 
-Este es un proyecto de [Next.js](https://nextjs.org) creado con [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+
 
 ## Comenzando
-
+Este es un proyecto de [Next.js](https://nextjs.org) creado con [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 Primero, ejecuta el servidor de desarrollo:
 
 ```bash
